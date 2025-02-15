@@ -1,0 +1,10 @@
+.square {
+  height: 100px;
+  width: 100px;
+}
+.square--white {
+  background-color: var(--color-white);
+}
+.square--black {
+  background-color: var(--color-secondary-dark);
+}
