@@ -1,6 +1,5 @@
 .square {
-  height: 100px;
-  width: 100px;
+  text-align: center;
 }
 .square--white {
   background-color: var(--color-white);
