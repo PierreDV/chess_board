@@ -29,8 +29,7 @@
   --screen-sm: 640px;
   --screen-md: 768px;
   --screen-lg: 1024px;
-  --screen-xl: 1280px;
-  --screen-2xl: 1536px;
+  --screen-xl: 1280pxs --screen-2xl: 1536px;
 
   /* Border radius */
   --rounded: 0.25rem;
