@@ -1,9 +1,0 @@
-.square {
-  text-align: center;
-}
-.square--white {
-  background-color: var(--color-white);
-}
-.square--black {
-  background-color: var(--color-secondary-dark);
-}

@@ -9,21 +9,19 @@
 @custom-media --motion-ok (prefers-reduced-motion: no-preference);
 @custom-media --motion-not-ok (prefers-reduced-motion: reduce);
 
+@font-face {
+  font-weight: 400 800;
+  font-family: baloo;
+  font-style: normal;
+  src: url("src/fonts/Baloo.woff2") format("woff2");
+  font-display: swap;
+}
 :root {
   /* Colours */
-  --color-white: hsl(66, 73%, 90%);
-  --color-black: hsl(0deg 0 0%);
-  --color-primary: hsl(347, 71%, 89%);
-  --color-secondary: hsl(166, 73%, 80%);
-  --color-secondary-dark: hsl(180, 43%, 62%);
-  --color-grey: hsl(var(--hsl-grey));
-  --color-grey-100: hsl(0deg 0% 95% / 100%);
-  --color-grey-200: hsl(0deg 0% 90% / 100%);
-  --color-grey-300: hsl(0deg 0% 85% / 100%);
-  --color-grey-500: hsl(0deg 0% 74% / 100%);
-  --color-grey-600: hsl(0deg 0% 52% / 100%);
-  --color-grey-700: hsl(0deg 0% 39% / 100%);
-  --color-grey-800: hsl(0deg 0% 29% / 100%);
+  --color-white: hsl(0, 0%, 97%);
+  --color-black: hsl(217, 10%, 25%);
+  --color-primary: hsl(34, 64%, 28%);
+  --color-secondary: hsl(49, 65%, 97%);
 
   /* Screen breakpoints */
   --screen-sm: 640px;
@@ -45,15 +43,9 @@
   --layer-5: 50;
 
   /* Text size */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 2rem;
+  --text-lg: 2.5rem;
 
   /* Fonts */
-  --font-body: "Sun Antwerpen", system-ui, sans-serif;
-  --font-title: var(--font-body);
+  --font-body: roboto, system-ui, sans-serif;
+  --font-title: baloo, var(--font-body);
 }
