@@ -1,0 +1,7 @@
+.page {
+  font-family: var(--font-body);
+  background: var(--color-white);
+  color: var(--color-black);
+  margin-inline: 1rem;
+  margin-block: 3rem 1rem;
+}
