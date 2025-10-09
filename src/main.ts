@@ -1,4 +1,6 @@
 import "./style/index.css";
+import "./components/index.ts"
+
 const board = document.querySelector(".board");
 
 [...Array(25).keys()].forEach((x) => {
