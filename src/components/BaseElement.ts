@@ -1,8 +1,4 @@
 export default class BaseElement extends HTMLElement {
-  constructor() {
-    super();
-  }
-
   static elementName: string | null = null;
 
   static register() {
