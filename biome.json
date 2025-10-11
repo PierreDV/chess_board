@@ -6,6 +6,10 @@
 		"useIgnoreFile": false
 	},
 	"files": {
+    "includes": [
+      "**",
+      "!**/coverage"
+    ],
 		"ignoreUnknown": false
 	},
 	"formatter": {
