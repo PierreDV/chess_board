@@ -1,51 +1,51 @@
 /* Screen breakpoints */
-@custom-media --screen-sm screen and (min-width: 640px);
+/* @custom-media --screen-sm screen and (min-width: 640px);
 @custom-media --screen-md screen and (min-width: 768px);
 @custom-media --screen-lg screen and (min-width: 1024px);
 @custom-media --screen-xl screen and (min-width: 1280px);
-@custom-media --screen-2xl screen and (min-width: 1536px);
+@custom-media --screen-2xl screen and (min-width: 1536px); */
 
 /* Preferences */
-@custom-media --motion-ok (prefers-reduced-motion: no-preference);
-@custom-media --motion-not-ok (prefers-reduced-motion: reduce);
+/* @custom-media --motion-ok (prefers-reduced-motion: no-preference);
+@custom-media --motion-not-ok (prefers-reduced-motion: reduce); */
 
 @font-face {
-  font-weight: 400 800;
-  font-family: baloo;
-  font-style: normal;
-  src: url("src/fonts/Baloo.woff2") format("woff2");
-  font-display: swap;
+	font-weight: 400 800;
+	font-family: baloo;
+	font-style: normal;
+	src: url("src/fonts/Baloo.woff2") format("woff2");
+	font-display: swap;
 }
 :root {
-  /* Colours */
-  --color-white: hsl(0, 0%, 97%);
-  --color-black: hsl(217, 10%, 25%);
-  --color-primary: hsl(34, 64%, 28%);
-  --color-secondary: hsl(49, 65%, 97%);
+	/* Colours */
+	--color-white: hsl(0, 0%, 97%);
+	--color-black: hsl(217, 10%, 25%);
+	--color-primary: hsl(34, 64%, 28%);
+	--color-secondary: hsl(49, 65%, 97%);
 
-  /* Screen breakpoints */
-  --screen-sm: 640px;
-  --screen-md: 768px;
-  --screen-lg: 1024px;
-  --screen-xl: 1280px;
-  --screen-2xl: 1536px;
+	/* Screen breakpoints */
+	--screen-sm: 640px;
+	--screen-md: 768px;
+	--screen-lg: 1024px;
+	--screen-xl: 1280px;
+	--screen-2xl: 1536px;
 
-  /* Border radius */
-  --rounded: 0.25rem;
-  --rounded-full: 9999px;
+	/* Border radius */
+	--rounded: 0.25rem;
+	--rounded-full: 9999px;
 
-  /* Z-index */
-  --layer-0: 0;
-  --layer-1: 10;
-  --layer-2: 20;
-  --layer-3: 30;
-  --layer-4: 40;
-  --layer-5: 50;
+	/* Z-index */
+	--layer-0: 0;
+	--layer-1: 10;
+	--layer-2: 20;
+	--layer-3: 30;
+	--layer-4: 40;
+	--layer-5: 50;
 
-  /* Text size */
-  --text-lg: 2.5rem;
+	/* Text size */
+	--text-lg: 2.5rem;
 
-  /* Fonts */
-  --font-body: roboto, system-ui, sans-serif;
-  --font-title: baloo, var(--font-body);
+	/* Fonts */
+	--font-body: roboto, system-ui, sans-serif;
+	--font-title: baloo, var(--font-body);
 }
