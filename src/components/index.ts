@@ -1,8 +1,5 @@
-import ChessMain from './ChessMain.ts'
-import ChessBoard from './ChessBoard.ts'
-import ChessHeader from './ChessHeader.ts'
+import ChessBoard from "./ChessBoard.ts";
+import ChessSquare from "./ChessSquare.ts";
 
-ChessMain.register();
 ChessBoard.register();
-ChessHeader.register();
-
+ChessSquare.register();

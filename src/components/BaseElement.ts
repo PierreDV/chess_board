@@ -1,10 +1,27 @@
-export default class BaseElement extends HTMLElement {
-  static elementName: string | null = null;
+export default abstract class BaseElement extends HTMLElement {
+	static elementName: string;
+  static styleSheets: CSSStyleSheet[];
+	static templateString: string; 
 
-  static register() {
-    if (!BaseElement.elementName) {
-      throw new Error("elementName must be defined in subclass");
-    }
-    return customElements.define(BaseElement.elementName, BaseElement)
-  };
+	protected render(): void {
+		const shadow = this.attachShadow({ mode: "open" });
+		const template = document.createElement("template");
+
+		shadow.adoptedStyleSheets = this.constructor.styleSheets;
+		template.innerHTML = this.constructor.templateString;
+		shadow.append(template.content.cloneNode(true));
+  }
+
+	constructor() {
+		super();
+    this.render();
+	}
+	
+	static register(): void {
+		if (!this.elementName) {
+			throw new Error("elementName must be defined in subclass");
+		}
+		customElements.define(this.elementName, this);
+	}
 }
+
